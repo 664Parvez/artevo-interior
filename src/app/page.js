@@ -1,24 +1,24 @@
 "use client"
 
-import Image from "next/image";
+import Image from "next/image"
 import Link from "next/link"
-import homeStyle from "./page.module.css";
+import homeStyle from "./page.module.css"
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react"
 
 // Icons
-import { MdArrowOutward } from "react-icons/md";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { LuMoveRight, LuMoveLeft } from "react-icons/lu";
+import { MdArrowOutward } from "react-icons/md"
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
+import { LuMoveRight, LuMoveLeft } from "react-icons/lu"
 
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
+import "swiper/css"
+import "swiper/css/navigation"
 
 // import required modules
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from "swiper/modules"
 
 // Images
 import Slider1 from "../../public/home/slider1.webp"
@@ -328,8 +328,8 @@ export default function Home() {
                   clickable: true,
                 }}
                 navigation={{
-                  nextEl: '.swiper-offering-button-next',
-                  prevEl: '.swiper-offering-button-prev'
+                  nextEl: ".swiper-offering-button-next",
+                  prevEl: ".swiper-offering-button-prev"
                 }}
                 grabCursor={true}
                 breakpoints={{
@@ -514,8 +514,8 @@ export default function Home() {
                       clickable: true,
                     }}
                     navigation={{
-                      nextEl: '.swiper-offering-button-next',
-                      prevEl: '.swiper-offering-button-prev'
+                      nextEl: ".swiper-offering-button-next",
+                      prevEl: ".swiper-offering-button-prev"
                     }}
                     grabCursor={true}
                     breakpoints={{
@@ -687,8 +687,8 @@ export default function Home() {
                       disableOnInteraction: false,
                     }}
                     navigation={{
-                      nextEl: '.swiper-button-next-unique',
-                      prevEl: '.swiper-button-prev-unique'
+                      nextEl: ".swiper-button-next-unique",
+                      prevEl: ".swiper-button-prev-unique"
                     }}
                     pagination={{
                       clickable: true,
@@ -1018,7 +1018,7 @@ export default function Home() {
               </div>
               <div className="col-lg-8 col-md-6">
                 <div className="text-end">
-                  <Link href="" className="btn" id={homeStyle.button_style}>Let's Discuss <span className="btn_icon"><MdArrowOutward /></span></Link>
+                  <Link href="" className="btn" id={homeStyle.button_style}>Lets Discuss <span className="btn_icon"><MdArrowOutward /></span></Link>
                 </div>
               </div>
             </div>
