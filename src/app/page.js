@@ -778,7 +778,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-8 col-md-6">
-                <iframe width="100%" height="370" className="rounded-4" src="https://www.youtube.com/embed/8Lmp1Ncaa7Y?si=ZriXSO0Fe5gIRtob" title="Artevo Interior Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="100%" height="370" className="rounded-4" src="https://www.youtube.com/embed/8Lmp1Ncaa7Y?si=ZriXSO0Fe5gIRtob" title="Artevo Interior Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
               </div>
             </div>
           </div>
@@ -813,7 +813,7 @@ export default function Home() {
               </li>
             </ul>
             <div className="tab-content" id="myTabContent">
-              <div className="tab-pane fade show active" id="best-tab-pane" role="tabpanel" aria-labelledby="best-tab" tabindex="0">
+              <div className="tab-pane fade show active" id="best-tab-pane" role="tabpanel" aria-labelledby="best-tab" tabIndex="0">
                 <div className="row mt-4 align-items-center">
                   <div className="col-lg-6 col-md-6">
                     <Image src={Project1} width={0} height={0} loading="lazy" alt="" />
@@ -840,7 +840,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="tab-pane fade" id="living-tab-pane" role="tabpanel" aria-labelledby="living-tab" tabindex="0">
+              <div className="tab-pane fade" id="living-tab-pane" role="tabpanel" aria-labelledby="living-tab" tabIndex="0">
                 <div className="row mt-4 align-items-center">
                   <div className="col-lg-6 col-md-6">
                     <Image src={Project2} width={0} height={0} loading="lazy" alt="" />
@@ -867,7 +867,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="tab-pane fade" id="bed-tab-pane" role="tabpanel" aria-labelledby="bed-tab" tabindex="0">
+              <div className="tab-pane fade" id="bed-tab-pane" role="tabpanel" aria-labelledby="bed-tab" tabIndex="0">
                 <div className="row mt-4 align-items-center">
                   <div className="col-lg-6 col-md-6">
                     <Image src={Project3} width={0} height={0} loading="lazy" alt="" />
@@ -894,7 +894,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="tab-pane fade" id="dining-tab-pane" role="tabpanel" aria-labelledby="dining-tab" tabindex="0">
+              <div className="tab-pane fade" id="dining-tab-pane" role="tabpanel" aria-labelledby="dining-tab" tabIndex="0">
                 <div className="row mt-4 align-items-center">
                   <div className="col-lg-6 col-md-6">
                     <Image src={Project4} width={0} height={0} loading="lazy" alt="" />
@@ -921,7 +921,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="tab-pane fade" id="office-tab-pane" role="tabpanel" aria-labelledby="office-tab" tabindex="0">
+              <div className="tab-pane fade" id="office-tab-pane" role="tabpanel" aria-labelledby="office-tab" tabIndex="0">
                 <div className="row mt-4 align-items-center">
                   <div className="col-lg-6 col-md-6">
                     <Image src={Project5} width={0} height={0} loading="lazy" alt="" />
@@ -948,7 +948,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="tab-pane fade" id="others-tab-pane" role="tabpanel" aria-labelledby="others-tab" tabindex="0">
+              <div className="tab-pane fade" id="others-tab-pane" role="tabpanel" aria-labelledby="others-tab" tabIndex="0">
                 <div className="row mt-4 align-items-center">
                   <div className="col-lg-6 col-md-6">
                     <Image src={Project6} width={0} height={0} loading="lazy" alt="" />
