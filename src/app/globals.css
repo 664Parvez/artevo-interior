@@ -108,3 +108,48 @@ a {
 .nav-tabs .nav-link:hover {
   border-color: transparent;
 }
+
+
+#formPopup {
+  /* background: #0a0a0a; */
+  backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 1500;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+#formPopupnone {
+  display: none;
+}
+#formPopup #cross {
+  font-size: 50px;
+  padding-top: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+#formPopup .popup_content {
+  margin-top: 5%;
+}
+#formPopup .popup_content {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 15px;
+  color: var(--black);
+}
+#formPopup .popup_content .btn {
+  background-color: var(--black);
+  color: var(--white);
+}
+#formPopup .popup_content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+#formPopup .popup_content ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+#formPopup .popup_content ul li:first-child {
+  margin-left: 0;
+}
