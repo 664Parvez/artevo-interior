@@ -1,165 +1,454 @@
-.page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
+#hero_section {
+    background-image: url("../../public/home/hero-background.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 120px;
+}
+#hero_section h1 {
+    font-size: 50px;
+}
+#hero_section .heading img {
+    height: 100%;
+    width: 100px;
+    border: 3px solid var(--white);
+    border-radius: 80px;
+}
+#hero_section #button_style {
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+#hero_section #button_style:hover {
+    box-shadow: 1px 1px 8px var(--white);
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
-}
-
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
-}
-
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
-}
-
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.ctas {
-  display: flex;
-  gap: 16px;
-}
-
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: none;
-  border: 1px solid transparent;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
-}
-
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
-}
-
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 180px;
-}
-
-.footer {
-  grid-row-start: 3;
-  display: flex;
-  gap: 24px;
-}
-
-.footer a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer img {
-  flex-shrink: 0;
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-}
-
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
-
-  .main {
+#hero_section .heroTag ul {
+    display: flex;
     align-items: center;
-  }
-
-  .main ol {
-    text-align: center;
-  }
-
-  .ctas {
-    flex-direction: column;
-  }
-
-  .ctas a {
+}
+#hero_section .heroTag ul li {
+    backdrop-filter: blur(10px);
+    margin-right: 5px;
+    padding: 3px 8px;
     font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
+    border-radius: 20px;
+}
+#hero_section .heroTag ul li:nth-child(2) {
+    transform: rotate(45deg);
+}
+#hero_section .heroTag ul li:nth-child(4) {
+    transform: rotate(-25deg);
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
+#hero_section .hero_social_icon {
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 10px;
+}
+#hero_section .hero_social_icon ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+#hero_section .hero_social_icon ul li a {
+    background-color: var(--white);
+    padding: 6px 10px;
+    border-radius: 50%;
+}
+#hero_section .hero_social_icon ul li a:hover {
+    background-color: var(--black);
+}
+#hero_section .hero_social_icon ul li a:hover svg {
+    color: var(--white) !important;
+}
+#hero_section .hero_social_icon #socialIcon {
+    color: var(--black);
+}
+#hero_section .hero_social_icon p {
+    font-size: 14px;
+}
+
+#heroSlider img {
+    height: 300px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#heroSlider .slider_title {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #hero_section {
+        height: 100%;
+    }
+    #hero_section h1 {
+        font-size: 35px;
+        padding-top: 0px;
+    }
+    #hero_section p {
+        font-size: 15px;
+    }
+    #hero_section #heroSlider {
+        margin-top: 30px;
+    }
+    #hero_section .heroTag {
+        display: none;
+    }
+    #hero_section .hero_social_icon {
+        display: none;
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    #hero_section {
+        height: 100%;
+    }
+    #hero_section h1 {
+        font-size: 40px !important;
+    }
+    #hero_section .hero_social_icon {
+        margin-top: 40px;
+    }
+    #hero_section .hero_social_icon ul {
+        margin: 10px 0;
+    }
+}
+
+#about_us {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+#about_us h5 {
+    display: inline;
+    background: var(--white);
+    color: var(--black);
+    padding: 2px 10px;
+    border-radius: 40px;
+}
+#about_us h2 {
+    font-size: 45px;
+    margin-top: 20px;
+}
+#about_us #aboutLeftSideImg {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#about_us .rightImg {
+    width: 40px;
+    height: 40px;
+}
+#about_us #button_style {
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+#about_us #button_style:hover {
+    box-shadow: 1px 1px 8px var(--white);
+}
+
+
+#recente_work {
+    padding: 50px 0;
+}
+#recente_work img {
+    width: 100%;
+    height: auto;
+}
+#recente_work h2 {
+    font-size: 60px;
+    opacity: .5;
+}
+#recente_work #button_style {
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+#recente_work #button_style:hover {
+    box-shadow: 1px 1px 8px var(--white);
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    
+}
+
+
+#offering {
+    padding: 50px 0;
+}
+#offering h2 {
+    font-size: 50px;
+}
+#offering .category_box {
+    background-color: var(--white);
+    padding: 10px 6px;
+    border-radius: 60px;
+}
+#offering .category_box img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+#offering .category_box p {
+    color: var(--black);
+}
+#offering #offering_navigate {
+    font-size: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: var(--white) !important;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    
+}
+
+
+#realize_idea {
+    padding: 50px 0;
+}
+#realize_idea h3 {
+    font-size: 50px;
+}
+#realize_idea #button_style {
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+#realize_idea #button_style:hover {
+    box-shadow: 1px 1px 8px var(--white);
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    
+}
+
+
+#give_you {
+    padding: 50px 0;
+    background-color: var(--white);
+    color: var(--black);
+}
+#give_you h5 {
+    display: inline;
+    background: var(--black);
+    color: var(--white);
+    padding: 2px 10px;
+    border-radius: 40px;
+}
+#give_you h3 {
+    font-size: 50px;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    
+}
+
+#furniture {
+    padding: 50px 0;
+}
+#furniture h3 {
+    font-size: 50px;
+}
+#furniture #furniture_left img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#furniture #furniture_left .furniture_title {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 10px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#furniture #furniture_right img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+#furniture #furniture_right small {
+    font-size: 12px;
+    font-weight: 200;
+}
+#furniture #furniture_right svg {
+    font-size: 40px;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--black);
+}
+
+
+#bathroom {
+    padding-top: 250px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.5)),url("../../public/home/bathroom.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bathroom h3 {
+    font-size: 90px;
+}
+#bathroom #button_style {
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+#bathroom #button_style:hover {
+    box-shadow: 1px 1px 8px var(--white);
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    
+}
+
+
+#customer_review {
+    padding: 50px 0;
+    background-color: var(--white);
+    color: var(--black);
+}
+#customer_review h3 {
+    font-size: 40px;
+}
+#customer_review #navigate {
+    font-size: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: var(--black) !important;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    
+}
+
+
+#beloved_section {
+    padding: 50px 0;
+}
+#beloved_section img {
+    width: 100%;
+    height: auto;
+}
+#beloved_section h3 {
+    font-size: 50px;
+}
+#beloved_section .right_side {
+    padding: 10px 40px;
+}
+#beloved_section ul li {
+    margin-top: 35px;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #beloved_section .right_side {
+        padding: 5px;
+    }
+}
+
+
+#project_done {
+    padding: 50px 0;
+}
+#project_done h3 {
+    font-size: 50px;
+}
+#project_done h4 {
+    font-size: 30px;
+}
+#project_done #button_style {
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+#project_done #button_style:hover {
+    box-shadow: 1px 1px 8px var(--white);
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+
+}
+
+
+#reality {
+    padding: 50px 0;
+}
+#reality h3 {
+    font-size: 50px;
+}
+#reality .realityBtn {
+    background-color: var(--white);
+    padding: 30px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#reality .realityBtn:hover {
+    box-shadow: 1px 1px 8px var(--white);
+}
+#reality .realityBtn a {
+    color: var(--black);
+}
+#reality .realityBtn span {
+    margin-left: 0;
+}
+#reality .realityBtn p {
+    margin-top: 15px;
+}
+#reality img {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    border-radius: 30px;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    
+}
+
+
+#awesome_projects {
+    padding: 50px 0;
+    background-color: var(--white);
+    color: var(--black);
+}
+#awesome_projects h3 {
+    font-size: 40px;
+}
+#awesome_projects #button_style {
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+#awesome_projects #button_style:hover {
+    box-shadow: 1px 1px 8px var(--black);
 }

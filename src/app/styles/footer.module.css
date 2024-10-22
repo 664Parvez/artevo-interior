@@ -1,0 +1,40 @@
+#footer {
+    padding: 50px 0;
+}
+#footer h2 {
+    font-size: 40px;
+}
+#footer .first_second button {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 25px;
+}
+
+#footer .second_section {
+    padding: 30px 0;
+}
+#footer .second_section img {
+    width: 200px;
+    height: auto;
+}
+#footer .second_section ul li a {
+    color: var(--white);
+}
+
+#footer .third_section ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+#footer .third_section ul li a {
+    color: var(--white);
+    font-size: 18px;
+}
+#footer .third_section ul li:last-child {
+    margin-right: 0;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #footer h2 {
+        font-size: 35px;
+    }
+}
