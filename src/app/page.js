@@ -72,11 +72,23 @@ export default function Home() {
 
   const [showPopup, setShowPopup] = useState(false)
 
+  // Swiper Slider forcefully Update
+  const [swiperKey, setSwiperKey] = useState(0);
+
   useEffect(() => {
     setTimeout(() => {
       setShowPopup(true)
     }, 4000)
+
   }, [])
+
+  // Swiper Slider forcefully Update
+  useEffect(() => {
+    if (showPopup === false) {
+      setSwiperKey(prevKey => prevKey + 1)
+    }
+  }, [showPopup])
+
 
   return (
     <>
@@ -132,6 +144,7 @@ export default function Home() {
               <div className="col-lg-6 col-md-6">
                 <div id={homeStyle.heroSlider}>
                   <Swiper
+                    key={swiperKey} // Swiper Slider forcefully Update
                     slidesPerView={["auto"]}
                     spaceBetween={10}
                     loop={true}
@@ -369,6 +382,7 @@ export default function Home() {
             </div>
             <div className="mt-5">
               <Swiper
+                key={swiperKey}
                 slidesPerView={["auto"]}
                 spaceBetween={30}
                 loop={true}
@@ -555,6 +569,7 @@ export default function Home() {
 
                 <div id={homeStyle.furniture_left}>
                   <Swiper
+                    key={swiperKey}
                     slidesPerView={["auto"]}
                     spaceBetween={10}
                     loop={true}
@@ -731,6 +746,7 @@ export default function Home() {
               <div className="col-lg-8 col-md-7">
                 <div>
                   <Swiper
+                    key={swiperKey}
                     slidesPerView={["auto"]}
                     spaceBetween={10}
                     loop={true}

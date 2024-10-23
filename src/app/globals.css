@@ -114,10 +114,9 @@ a {
   /* background: #0a0a0a; */
   backdrop-filter: blur(10px);
   position: fixed;
-  z-index: 1500;
+  z-index: 9999;
   height: 100%;
   width: 100%;
-  display: block;
 }
 #formPopupnone {
   display: none;
