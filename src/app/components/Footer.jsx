@@ -76,7 +76,7 @@ const Footer = () => {
                                     <hr />
 
                                     <li><Link href="tel:+874 254 6584"><FaPhoneAlt /> | +874 254 6584</Link></li>
-                                    <li><Link href="https://wa.me/:+8742546584"><FaWhatsapp /> | +874 254 6584</Link></li>
+                                    <li><Link href="https://wa.me/+8742546584"><FaWhatsapp /> | +874 254 6584</Link></li>
                                     <li><Link href="mailto:example@gmail.com"><FaEnvelope /> | example@gmail.com</Link></li>
                                     <li><FaLocationDot /> | 342, Boldock Street, California, USA</li>
                                 </ul>

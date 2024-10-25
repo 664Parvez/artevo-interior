@@ -13,12 +13,12 @@ const GetAQuote = () => {
                 </div>
             </section>
             <section>
-                <div id={GetAQuoteStyle.get_a_quote}>
+                <div className="mt-4" id={GetAQuoteStyle.get_a_quote}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-3"></div>
                             <div className="col-lg-6">
-                                <form action="">
+                                <form action="" method="POST">
                                     <div className="row">
                                         <div className="col-lg-12 mt-4">
                                             <label htmlFor="name">Full Name</label>
