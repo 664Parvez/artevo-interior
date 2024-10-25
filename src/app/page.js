@@ -5,9 +5,6 @@ import Image from "next/image"
 import Link from "next/link"
 import homeStyle from "./page.module.css"
 
-// Components
-import PopupMassage from "./components/Popup-subscribe"
-
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"
 
@@ -93,40 +90,42 @@ export default function Home() {
   return (
     <>
 
-<div id={showPopup ? "formPopup" : "formPopupnone"}>
-  <RxCross2 id='cross' onClick={() => setShowPopup(!showPopup)} />
-    <div className="container">
-        <div className="row">
-            <div className="col-lg-2"></div>
-            <div className="col-lg-8">
-                <div className="popup_content">
-                    <div className="d-flex justify-content-center align-items-center gap-4">
-                        <div>
-                            <h2>Our Newsletter</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ratione explicabo veniam id dolore suscipit debitis repellendus tenetur. Nihil, dolore.</p>
-                            <div className="mt-4">
-                                <div className="input-group">
-                                    <input type="text" placeholder='Enter your email' className='form-control form-control-lg' />
-                                    <button className='btn btn-lg'><FaLocationArrow /></button>
-                                </div>
-                            </div>
-                            <ul className='mt-5'>
-                                <li><LuSparkles /> Interior Inspiration</li>
-                                <li><LuSparkles /> Exclusive Discount</li>
-                                <li><LuSparkles /> How to and room reveals</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <Image src={PopupImg} width={0} height={0} loading='lazy' alt=''/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="col-lg-2"></div>
-        </div>
-    </div>
-</div>
+{/* Popup Section */}
+    <div id={showPopup ? "formPopup" : "formPopupnone"}>
+        <RxCross2 id='cross' onClick={() => setShowPopup(!showPopup)} />
+          <div className="container">
+              <div className="row">
+                  <div className="col-lg-2"></div>
+                  <div className="col-lg-8">
+                      <div className="popup_content">
+                          <div className="d-flex justify-content-center align-items-center gap-4">
+                              <div>
+                                  <h2>Our Newsletter</h2>
+                                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ratione explicabo veniam id dolore suscipit debitis repellendus tenetur. Nihil, dolore.</p>
+                                  <div className="mt-4">
+                                      <div className="input-group">
+                                          <input type="text" placeholder='Enter your email' className='form-control form-control-lg' />
+                                          <button className='btn btn-lg'><FaLocationArrow /></button>
+                                      </div>
+                                  </div>
+                                  <ul className='mt-5'>
+                                      <li><LuSparkles /> Interior Inspiration</li>
+                                      <li><LuSparkles /> Exclusive Discount</li>
+                                      <li><LuSparkles /> How to and room reveals</li>
+                                  </ul>
+                              </div>
+                              <div>
+                                  <Image src={PopupImg} width={0} height={0} loading='lazy' alt=''/>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div className="col-lg-2"></div>
+              </div>
+          </div>
+      </div>
 
+   {/* First Section */}
       <section>
         <div id={homeStyle.hero_section}>
           <div className="container">
@@ -137,7 +136,7 @@ export default function Home() {
                   Excellence In The Construction Industry</h1>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illum doloribus enim. Quia ex, maiores sint unde tempore fuga ea.</p>
                   <div className="mt-5">
-                    <Link href="" className="btn" id={homeStyle.button_style}>Schedule a Consultation <span className="btn_icon"><MdArrowOutward /></span></Link>
+                    <Link href="/get-a-quote" className="btn" id={homeStyle.button_style}>Schedule a Consultation <span className="btn_icon"><MdArrowOutward /></span></Link>
                   </div>
                 </div>
               </div>
@@ -323,7 +322,7 @@ export default function Home() {
                 </div>
 
                 <div className="mt-5">
-                  <Link href="" className="btn" id={homeStyle.button_style}>About Us <span className="btn_white_icon"><MdArrowOutward /></span></Link>
+                  <Link href="/about-us" className="btn" id={homeStyle.button_style}>About Us <span className="btn_white_icon"><MdArrowOutward /></span></Link>
                 </div>
               </div>
             </div>
@@ -339,7 +338,7 @@ export default function Home() {
                 <h3>Some of Our Recente Work</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore perspiciatis assumenda ipsa expedita cupiditate.</p>
                 <div className="mt-5">
-                  <Link href="" className="btn" id={homeStyle.button_style}>See Portfolio <span className="btn_white_icon"><MdArrowOutward /></span></Link>
+                  <Link href="/portfolio" className="btn" id={homeStyle.button_style}>See Portfolio <span className="btn_white_icon"><MdArrowOutward /></span></Link>
                 </div>
               </div>
               <div className="col-lg-4 col-md-4">
@@ -549,7 +548,7 @@ export default function Home() {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est accusantium ipsam atque. Repudiandae, aperiam? Totam atque dignissimos labore est excepturi deserunt cumque molestias nam aut doloribus esse.</p>
 
                   <div className="mt-5">
-                    <Link href="" className="btn" id={homeStyle.button_style}>Get Started <span className="btn_white_icon"><MdArrowOutward /></span></Link>
+                    <Link href="/design-ideas/residencial-interior" className="btn" id={homeStyle.button_style}>Get Started <span className="btn_white_icon"><MdArrowOutward /></span></Link>
                   </div>
               </div>
               <div className="col-lg-6">
@@ -676,7 +675,7 @@ export default function Home() {
                       <Image src={Shopping} width={0} height={0} loading="lazy" alt="" />
                       <div className="d-flex justify-content-evenly align-items-center gap-3 mt-4">
                         <div>
-                          <Link href="">
+                          <Link href="/offers">
                             <MdArrowOutward />
                           </Link>
                         </div>
@@ -1071,7 +1070,9 @@ export default function Home() {
             </div>
             
             <div className="text-center">
-              <Image src={RealityImg} width={0} height={0} alt="" />
+              <div>
+                <Image src={RealityImg} width={0} height={0} alt="" />
+              </div>
             </div>
           </div>
         </div>

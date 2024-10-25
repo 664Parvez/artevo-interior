@@ -9,6 +9,8 @@ import Logo from "../../../public/logo.png"
 // Icons
 import { MdArrowOutward } from "react-icons/md";
 import { FaFacebookSquare, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
 
@@ -18,6 +20,8 @@ const Footer = () => {
         <>
             <section id={footerStyle.footer}>
                 <div className="container">
+
+                <hr />
 
                     <div className={footerStyle.first_second}>
                         <h2 className='text-center'>Subscribe for More Updates</h2>
@@ -38,31 +42,64 @@ const Footer = () => {
                         <div className="row">
                             <div className="col-lg-4 col-md-6 mt-4">
                                 <Image src={Logo} height="0" width="0" alt="" />
+                                <p className='mt-4'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur doloribus rerum totam aspernatur provident . . .</p>
+
+                                <div className="mt-4 col-lg-12">
+                                    <Link href="/about-us" type="submit" className="btn" id={footerStyle.button_style}>Read More <span className="btn_white_icon"><MdArrowOutward /></span></Link>
+                                </div>
                             </div>
                             <div className="col-lg-2 col-md-6 mt-4">
                                 <ul>
-                                    <li><Link href="">FAQ</Link></li>
-                                    <li><Link href="">Contact</Link></li>
+                                    <li><h5>Quick Link</h5></li>
+                                    <hr />
+                                    <li><Link href="/about-us">About Us</Link></li>
+                                    <li><Link href="/faq">FAQ</Link></li>
+                                    <li><Link href="/collaboration">Collaboration</Link></li>
+                                    <li><Link href="/jobs">Jobs</Link></li>
+                                    <li><Link href="/contact-us">Contact</Link></li>
                                 </ul>
                             </div>
                             <div className="col-lg-3 col-md-6 mt-4">
                                 <ul>
-                                    <li><Link href="">+874 254 6584</Link></li>
-                                    <li><Link href="">example@gmail.com</Link></li>
+                                    <li><h5>Our Service</h5></li>
+                                    <hr />
+                                    <li><Link href="/design-ideas/residencial-interior">Residencial Interior</Link></li>
+                                    <li><Link href="/design-ideas/workspace-interior">Workspace Interior</Link></li>
+                                    <li><Link href="/offerings/home-automation">Home Automation</Link></li>
+                                    <li><Link href="/offerings/home-renovation">Home Renovation</Link></li>
+                                    <li><Link href="/offerings/personalized-furniture">Personalized Furniture</Link></li>
                                 </ul>
                             </div>
                             <div className="col-lg-3 col-md-6 mt-4">
-                                <p className='mb-0'>342, Boldock Street, California, USA</p>
+                                <ul>
+                                    <li><h5>Contact Info</h5></li>
+                                    <hr />
+
+                                    <li><Link href="tel:+874 254 6584"><FaPhoneAlt /> | +874 254 6584</Link></li>
+                                    <li><Link href="https://wa.me/:+8742546584"><FaWhatsapp /> | +874 254 6584</Link></li>
+                                    <li><Link href="mailto:example@gmail.com"><FaEnvelope /> | example@gmail.com</Link></li>
+                                    <li><FaLocationDot /> | 342, Boldock Street, California, USA</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-
+                    
+                    <div className={footerStyle.term_condition_section}>
+                        <div className="text-lg-end my-4">
+                            <ul>
+                                <li><Link href="/terms-and-condition">Terms & Conditions</Link></li>
+                                <li><Link href="/privacy-policy">Privacy Policy</Link></li>
+                                <li><Link href="/disclaimer">Disclaimer</Link></li>
+                                <li><Link href="/refund-policy">Refund Policy</Link></li>
+                            </ul>
+                        </div>
+                    </div>
                     <hr />
 
                     <div className={footerStyle.third_section}>
                         <div className="row align-items-center">
                             <div className="col-lg-6 col-md-6">
-                                <p className='mb-0'>© {yearDate} artevointerior | Powered by artevointerior</p>
+                                <p className='mb-0'>© {yearDate} artevointerior | Powered by artevointerior | Design and Developed by <Link href="https://parvez-rabbi.vercel.app/">Parvez Rabbi</Link></p>
                             </div>
                             <div className="col-lg-6 col-md-6">
                                 <ul className='text-end'>

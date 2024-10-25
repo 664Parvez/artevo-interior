@@ -1,5 +1,9 @@
 #footer {
     padding: 50px 0;
+    background-image: url("../../../public/footer/footer-bg.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-top: 50px;
 }
 #footer h2 {
     font-size: 40px;
@@ -17,10 +21,47 @@
     width: 200px;
     height: auto;
 }
+#footer .second_section p {
+    font-size: 14px;
+}
+#footer .second_section #button_style {
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+#footer .second_section ul li {
+    margin: 10px 0;
+}
+#footer .second_section ul li:first-child {
+    margin-top: 0;
+}
+#footer .second_section #button_style:hover {
+    box-shadow: 1px 1px 8px var(--white);
+}
 #footer .second_section ul li a {
     color: var(--white);
 }
 
+#footer .term_condition_section ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+#footer .term_condition_section ul li:last-child {
+    margin-right: 0;
+}
+#footer .term_condition_section ul li a {
+    color: var(--white);
+}
+
+#footer .third_section p {
+    font-size: 14px;
+}
+#footer .third_section p a {
+    color: var(--white);
+}
 #footer .third_section ul li {
     display: inline-block;
     margin-right: 15px;

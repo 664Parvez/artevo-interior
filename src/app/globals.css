@@ -37,6 +37,12 @@ p, small, label, li, button {
 a, span {
   font-family: var(--font-poppins) !important;
 }
+input::placeholder {
+  font-family: var(--font-poppins) !important;
+}
+select option {
+  font-family: var(--font-poppins) !important;
+}
 
 * {
   box-sizing: border-box;
