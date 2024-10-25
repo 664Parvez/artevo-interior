@@ -16,7 +16,6 @@ const Footer = () => {
 
     const yearDate = new Date().getFullYear()
 
-    
     return (
         <>
             <section id={footerStyle.footer}>
