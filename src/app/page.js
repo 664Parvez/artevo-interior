@@ -90,7 +90,6 @@ export default function Home() {
   return (
     <>
 
-{/* Popup Section */}
     <div id={showPopup ? "formPopup" : "formPopupnone"}>
         <RxCross2 id='cross' onClick={() => setShowPopup(!showPopup)} />
           <div className="container">
@@ -125,7 +124,6 @@ export default function Home() {
           </div>
       </div>
 
-   {/* First Section */}
       <section>
         <div id={homeStyle.hero_section}>
           <div className="container">
