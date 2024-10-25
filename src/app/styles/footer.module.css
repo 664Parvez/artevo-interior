@@ -21,9 +21,7 @@
     width: 200px;
     height: auto;
 }
-#footer .second_section p {
-    font-size: 14px;
-}
+
 #footer .second_section #button_style {
     background-color: var(--white);
     color: var(--black);

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const gallery = () => {
+const signleDiaries = () => {
     return (
         <div>
         
@@ -8,4 +8,4 @@ const gallery = () => {
     )
 }
 
-export default gallery
+export default signleDiaries

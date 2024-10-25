@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Jobs | Artevo Interior",
+    title: "Our Offers | Artevo Interior",
     description: "It is agency of Student Counciling",
 };
 
