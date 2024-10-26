@@ -1,4 +1,5 @@
 import Script from "next/script"
+import Head from "next/head";
 import "bootstrap/dist/css/bootstrap.min.css"
 import localFont from "next/font/local";
 import "./globals.css";
@@ -14,6 +15,8 @@ const poppins = localFont({
   weight: "100 900",
 });
 
+// Image
+import Favicon from "./favicon.ico"
 
 // Components
 import Navbar from "./components/Navbar"
@@ -29,9 +32,12 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <Head>
+        <link rel="shortcut icon" href={Favicon} type="image/x-icon" />
+      </Head>
       <body className={`${staraSans.variable} ${poppins.variable}`} suppressHydrationWarning={true}>
         <Navbar />
-        {children}
+          {children}
         <Footer />
       </body>
 

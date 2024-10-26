@@ -11,6 +11,19 @@
 #first_section h1 {
     font-size: 45px;
 }
+#first_section p a {
+    color: var(--white);
+}
+#first_section svg {
+    font-size: 30px;
+}
+
+.contactTime {
+    padding: 50px 0;
+}
+.contactTime p span {
+    font-size: 30px;
+}
 
 #second_section {
     padding: 50px 0;
@@ -25,6 +38,9 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 5px;
+}
+#second_section #button_style:hover {
+    box-shadow: 1px 1px 8px var(--white);
 }
 #second_section img {
     width: 100%;
