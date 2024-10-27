@@ -72,7 +72,7 @@ const Navbar = () => {
                         <ul className="dropdown-menu">
                             <li><Link className="dropdown-item" href="/about-us">About Us</Link></li>
                             <li><Link className="dropdown-item" href="/gallery">Gallery</Link></li>
-                            <li><Link className="dropdown-item" href="/offers">Our Offers</Link></li>
+                            <li><Link className="dropdown-item" href="/we-offer-you">We Offer You</Link></li>
                             <li><Link className="dropdown-item" href="/our-projects">Our Projects</Link></li>
                             <li><Link className="dropdown-item" href="/refer-and-earn">Refer & Earn</Link></li>
                         </ul>

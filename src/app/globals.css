@@ -1,6 +1,7 @@
 :root {
   --black: #171717;
   --white: #ffffff;
+  --purple: #a73694;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -92,8 +93,40 @@ a {
   font-size: 18px;
 }
 
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button {
+  background-color: var(--purple);
+  color: var(--white);
+}
+.accordion-button:not(.collapsed) {
+  color: var(--white);
+  background-color: var(--purple);
+}
+.accordion-body {
+  background-color: var(--black);
+  color: var(--white);
+}
+
 .form-control:focus {
   box-shadow: none;
+}
+
+.circle_img {
+  width: 200px !important;
+  height: 200px !important;
+  opacity: .5;
+  animation: circle_animate 7s infinite linear;
+}
+
+@keyframes circle_animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
 }
 
 .dropdown-menu.show {
