@@ -38,12 +38,12 @@
     font-size: 14px;
     border-radius: 20px;
 }
-/* #hero_section .heroTag ul li:nth-child(2) {
+#hero_section .heroTag ul li:nth-child(2) {
     transform: rotate(45deg);
-} */
-/* #hero_section .heroTag ul li:nth-child(4) {
+}
+#hero_section .heroTag ul li:nth-child(4) {
     transform: rotate(-25deg);
-} */
+}
 
 #hero_section .hero_social_icon {
     backdrop-filter: blur(10px);
@@ -146,7 +146,7 @@
 #about_us .rightImg {
     width: 40px;
     height: 40px;
-}
+} 
 #about_us #button_style {
     color: var(--black);
     background-color: var(--white);

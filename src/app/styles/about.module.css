@@ -59,3 +59,34 @@
 #third_section #button_style:hover {
     box-shadow: 1px 1px 8px var(--white);
 }
+
+#forth_section {
+    padding: 50px 0;
+}
+#forth_section h3 {
+    font-size: 50px;
+}
+
+#fifth_section {
+    margin: 50px 0;
+    padding: 80px 0;
+    background-image: linear-gradient(360deg, rgba(0,0,0,0.7), #000000),url("../../../public/about/fifth.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#fifth_section h3 {
+    font-size: 50px;
+}
+#fifth_section #button_style {
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+#fifth_section #button_style:hover {
+    box-shadow: 1px 1px 8px var(--white);
+}
