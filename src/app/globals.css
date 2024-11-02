@@ -191,3 +191,153 @@ a {
 #formPopup .popup_content ul li:first-child {
   margin-left: 0;
 }
+
+
+
+/* Design Ideas Component */
+#bradcrum {
+  padding: 150px 0;
+  background-image: linear-gradient(360deg, rgba(0,0,0,0.5), #000000),url("../../public/residencial-interior/Untitled-design-3.webp");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#bradcrum h1 {
+  font-size: 60px;
+}
+#design_ideas_first_section {
+  padding: 50px 0;
+}
+#design_ideas_first_section h2 {
+  font-size: 50px;
+}
+#design_ideas_categories .card-body img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+#design_ideas_categories .card #button_style {
+  color: var(--white);
+  background-color: var(--black);
+  border-radius: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+}
+#design_ideas_categories #button_style:hover {
+  box-shadow: 1px 1px 8px var(--black);
+}
+
+#design_ideas_third_section {
+  padding: 50px 0;
+}
+#design_ideas_third_section h3 {
+  font-size: 50px;
+}
+#design_ideas_third_section #button_style {
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+}
+#design_ideas_third_section #button_style:hover {
+  box-shadow: 1px 1px 8px var(--white);
+}
+
+#design_ideas_forth_section {
+  padding: 50px 0;
+}
+#design_ideas_forth_section h3 {
+  font-size: 40px;
+}
+#design_ideas_forth_section img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+#design_ideas_fifth_section {
+  padding: 50px 0;
+}
+#design_ideas_fifth_section h3 {
+  font-size: 50px;
+}
+#design_ideas_fifth_section img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+#design_ideas_sixth_section {
+  padding: 50px 0;
+}
+#design_ideas_sixth_section .our_newsletter {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.5)),url("../../public/residencial-interior/Untitled-design-3.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 40px 20px;
+  border-radius: 15px;
+}
+#design_ideas_sixth_section h5 {
+  display: inline;
+  background: var(--white);
+  color: var(--black);
+  padding: 2px 10px;
+  border-radius: 40px;
+}
+#design_ideas_sixth_section #button_style {
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+}
+#design_ideas_sixth_section #button_style:hover {
+  box-shadow: 1px 1px 8px var(--white);
+}
+
+#design_ideas_seven_section {
+  padding: 50px 0;
+}
+#design_ideas_seven_section h5 {
+  display: inline;
+  background: var(--white);
+  color: var(--black);
+  padding: 2px 10px;
+  border-radius: 40px;
+}
+#design_ideas_seven_section h3 {
+  font-size: 80px;
+}
+
+#design_ideas_eight_section {
+  padding-top: 50px;
+  user-select: none;
+}
+#design_ideas_eight_section h4 {
+  font-size: 35px;
+}
+#design_ideas_eight_section img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+#design_ideas_eight_section #button_style {
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+}
+#design_ideas_eight_section #button_style:hover {
+  box-shadow: 1px 1px 8px var(--white);
+}
