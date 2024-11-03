@@ -59,8 +59,6 @@ const Navbar = () => {
                     <li className='nav-item dropdown'><Link className='nav-link dropdown-toggle' data-bs-toggle="dropdown" role="button" href="#">Offerings</Link>
                         <ul className="dropdown-menu">
                             <li><Link className="dropdown-item" href="/offerings/moduler-interior">Moduler Interior</Link></li>
-                            <li><Link className="dropdown-item" href="/offerings/full-home-interior">Home Interior</Link></li>
-                            <li><Link className="dropdown-item" href="/offerings/luxury-interior">Luxury Interior</Link></li>
                             <li><Link className="dropdown-item" href="/offerings/home-renovation">Home Renovation</Link></li>
                             <li><Link className="dropdown-item" href="/offerings/home-automation">Home Automation</Link></li>
                             <li><Link className="dropdown-item" href="/offerings/personalized-furniture">Personalized Furniture</Link></li>
@@ -71,8 +69,6 @@ const Navbar = () => {
                     <li className='nav-item dropdown'><Link className='nav-link dropdown-toggle' data-bs-toggle="dropdown" role="button" href="#">More</Link>
                         <ul className="dropdown-menu">
                             <li><Link className="dropdown-item" href="/about-us">About Us</Link></li>
-                            <li><Link className="dropdown-item" href="/gallery">Gallery</Link></li>
-                            <li><Link className="dropdown-item" href="/we-offer-you">We Offer You</Link></li>
                             <li><Link className="dropdown-item" href="/our-projects">Our Projects</Link></li>
                             <li><Link className="dropdown-item" href="/refer-and-earn">Refer & Earn</Link></li>
                         </ul>
