@@ -52,13 +52,13 @@ const Navbar = () => {
                 <ul>
                     <li className='nav-item dropdown'><Link className='nav-link dropdown-toggle' data-bs-toggle="dropdown" role="button" href="#">Design Ideas</Link>
                         <ul className="dropdown-menu">
-                            <li><Link className="dropdown-item" href="/design-ideas/residencial-interior">Residential Interior</Link></li>
-                            <li><Link className="dropdown-item" href="/design-ideas/workspace-interior">Workspace Interior</Link></li>
+                            <li><Link className="dropdown-item" href="/design-ideas/residencial-interior">Residential</Link></li>
+                            <li><Link className="dropdown-item" href="/design-ideas/workspace-interior">Workspace</Link></li>
                         </ul>
                     </li>
                     <li className='nav-item dropdown'><Link className='nav-link dropdown-toggle' data-bs-toggle="dropdown" role="button" href="#">Offerings</Link>
                         <ul className="dropdown-menu">
-                            <li><Link className="dropdown-item" href="/offerings/modular-interior">Modular Interior</Link></li>
+                            <li><Link className="dropdown-item" href="/offerings/moduler-interior">Moduler Interior</Link></li>
                             <li><Link className="dropdown-item" href="/offerings/full-home-interior">Home Interior</Link></li>
                             <li><Link className="dropdown-item" href="/offerings/luxury-interior">Luxury Interior</Link></li>
                             <li><Link className="dropdown-item" href="/offerings/home-renovation">Home Renovation</Link></li>
