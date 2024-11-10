@@ -358,8 +358,52 @@ a {
 }
 
 #offering_first_section {
-  padding: 50px 0;
+  padding-top: 50px;
 }
 #offering_first_section h2 {
-  
+  font-size: 40px;
+}
+
+#offering_second_section {
+  padding: 50px 0;
+}
+#offering_second_section h2 {
+  font-size: 40px;
+}
+#offering_second_section .card img {
+  width: 100%;
+  height: auto;
+}
+
+#offering_third_section {
+  padding: 50px 0;
+}
+#offering_third_section .col-lg-4 {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+#offering_forth_section {
+  padding: 50px 0;
+}
+
+#offering_fifth_section {
+  padding-top: 50px;
+}
+#offering_fifth_section img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+#offering_fifth_section #button_style {
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+}
+#offering_fifth_section #button_style:hover {
+  box-shadow: 1px 1px 8px var(--white);
 }
