@@ -4,14 +4,14 @@ import Image from "next/image"
 
 
 // Image
-import offer2 from "../../../public/Offering/2.jpg"
-import offer45days from "../../../public/Offering/45days.webp"
-import icon1 from "../../../public/offering/design-icon.webp"
-import icon2 from "../../../public/offering/meterials.webp"
-import icon3 from "../../../public/offering/menufecturing.webp"
-import icon4 from "../../../public/offering/quality-check.webp"
-import icon5 from "../../../public/offering/packaging.webp"
-import icon6 from "../../../public/offering/installation.webp"
+import offer2 from "/public/Offering/2.jpg"
+import offer45days from "/public/Offering/45days.webp"
+import icon1 from "/public/offering/design-icon.webp"
+import icon2 from "/public/offering/meterials.webp"
+import icon3 from "/public/offering/menufecturing.webp"
+import icon4 from "/public/offering/quality-check.webp"
+import icon5 from "/public/offering/packaging.webp"
+import icon6 from "/public/offering/installation.webp"
 
 // Icons
 import { MdArrowOutward } from "react-icons/md"
