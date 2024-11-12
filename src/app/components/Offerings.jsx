@@ -2,11 +2,16 @@ import React from 'react'
 import Link from 'next/link'
 import Image from "next/image"
 
-import offeringStyle from "../styles/offering.module.css"
 
 // Image
 import offer2 from "../../../public/Offering/2.jpg"
 import offer45days from "../../../public/Offering/45days.webp"
+import icon1 from "../../../public/offering/design-icon.webp"
+import icon2 from "../../../public/offering/meterials.webp"
+import icon3 from "../../../public/offering/menufecturing.webp"
+import icon4 from "../../../public/offering/quality-check.webp"
+import icon5 from "../../../public/offering/packaging.webp"
+import icon6 from "../../../public/offering/installation.webp"
 
 // Icons
 import { MdArrowOutward } from "react-icons/md"
@@ -93,7 +98,7 @@ const offeringsComponent = () => {
                         <div className="col-lg-4 col-md-6 mt-5">
                             <div className='card'>
                                 <div className="card-body">
-                                    <Image src="" width={0} height={0} alt='' />
+                                    <Image src={icon1} width={0} height={0} alt='' />
                                     <p>Tailored for you, applying the actual science of making living easy and beautiful.</p>
 
                                     <h4>Design</h4>
@@ -103,7 +108,7 @@ const offeringsComponent = () => {
                         <div className="col-lg-4 col-md-6 mt-5">
                             <div className='card'>
                                 <div className="card-body">
-                                    <Image src="" width={0} height={0} alt='' />
+                                    <Image src={icon2} width={0} height={0} alt='' />
                                     <p>Ethically sourced and sized up against the fierce tests of NABL certified labs.</p>
 
                                     <h4>Core Materials</h4>
@@ -113,7 +118,7 @@ const offeringsComponent = () => {
                         <div className="col-lg-4 col-md-6 mt-5">
                             <div className='card'>
                                 <div className="card-body">
-                                    <Image src="" width={0} height={0} alt='' />
+                                    <Image src={icon3} width={0} height={0} alt='' />
                                     <p>Precision engineered and fully automated for zero ‘whoops’ moments.</p>
 
                                     <h4>Manufacturing</h4>
@@ -123,7 +128,7 @@ const offeringsComponent = () => {
                         <div className="col-lg-4 col-md-6 mt-5">
                             <div className='card'>
                                 <div className="card-body">
-                                    <Image src="" width={0} height={0} alt='' />
+                                    <Image src={icon4} width={0} height={0} alt='' />
                                     <p>Hardware and drop tests ensure our DuraBuild cabinets withstand wear and tear.</p>
 
                                     <h4>Quality Checks</h4>
@@ -133,7 +138,7 @@ const offeringsComponent = () => {
                         <div className="col-lg-4 col-md-6 mt-5">
                             <div className='card'>
                                 <div className="card-body">
-                                    <Image src="" width={0} height={0} alt='' />
+                                    <Image src={icon5} width={0} height={0} alt='' />
                                     <p>Protected well, all modules reach your home in pristine condition.</p>
 
                                     <h4>Packaging</h4>
@@ -143,7 +148,7 @@ const offeringsComponent = () => {
                         <div className="col-lg-4 col-md-6 mt-5">
                             <div className='card'>
                                 <div className="card-body">
-                                    <Image src="" width={0} height={0} alt='' />
+                                    <Image src={icon6} width={0} height={0} alt='' />
                                     <p>Your finished modular furniture will be installed by certified and trained Livspace professionals.</p>
 
                                     <h4>Delivery & Installation</h4>
